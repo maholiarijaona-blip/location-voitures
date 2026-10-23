@@ -8,6 +8,7 @@ import VoituresPage from './features/voitures/VoituresPage'
 import ClientsPage from './features/clients/ClientsPage'
 import LocationsPage from './features/locations/LocationsPage'
 import PaiementsPage from './features/paiements/PaiementsPage'
+import AboutPage from './features/about/AboutPage'
 import NotFound from './pages/NotFound'
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="voitures" element={<VoituresPage />} />
         <Route path="locations" element={<LocationsPage />} />
         <Route path="paiements" element={<PaiementsPage />} />
+        <Route path="a-propos" element={<AboutPage />} />
         <Route
           path="clients"
           element={

@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { LayoutDashboard, Car, CarFront, Users, KeyRound, Wallet, LogOut } from 'lucide-react'
+import { LayoutDashboard, Car, CarFront, Users, KeyRound, Wallet, Info, LogOut } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 
 const LIENS_ADMIN = [
@@ -8,6 +8,7 @@ const LIENS_ADMIN = [
   { to: '/clients', label: 'Clients', icon: Users },
   { to: '/locations', label: 'Locations', icon: KeyRound },
   { to: '/paiements', label: 'Paiements', icon: Wallet },
+  { to: '/a-propos', label: 'À propos', icon: Info },
 ]
 
 const LIENS_CLIENT = [
@@ -15,6 +16,7 @@ const LIENS_CLIENT = [
   { to: '/voitures', label: 'Voitures', icon: Car },
   { to: '/locations', label: 'Mes locations', icon: KeyRound },
   { to: '/paiements', label: 'Mes paiements', icon: Wallet },
+  { to: '/a-propos', label: 'À propos', icon: Info },
 ]
 
 export default function Sidebar({ open, onNavigate }) {
